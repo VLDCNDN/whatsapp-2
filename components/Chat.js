@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Avatar, IconButton, Button } from "@material-ui/core";
 
-function Chat({ id, users }) {
+function Chat({ id, user }) {
+  
   return (
     <Container>
-      <UserAvatar></UserAvatar>
-      <p>Recipient Email</p>
+      <UserAvatar src={user.photoURL}></UserAvatar>
+      <p>{user?.displayName}</p>
     </Container>
   );
 }

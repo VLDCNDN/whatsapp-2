@@ -19,9 +19,11 @@ function MyApp({ Component, pageProps }) {
             email : user.email,
             photoURL : user.photoURL,
             lastSeen: serverTimestamp(),
+            isOnline: true,
+            displayName: user.displayName,
           })
 
-          console.info("Document written", docRef);
+          console.info("Document written");
         } catch (error) {
           console.error(error);
         }

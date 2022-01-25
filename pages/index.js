@@ -3,6 +3,23 @@ import Image from 'next/image'
 import Sidebar from '../components/Sidebar'
 
 export default function Home() {
+  // const [user] = useAuthState(auth);
+  // const [users, setUsers] = useState([]); 
+
+  // const usersQuery = async () => {
+  //   const usersRef = collection(db, "users");
+  //   const q = query(usersRef, where("email", "!=", user.email));
+  //   const querySnapshot = await getDocs(q);
+  //   querySnapshot.forEach((doc) => {
+  //       setUsers(...users, doc.data());
+  //       console.log(doc.id);
+  //   });
+  // }
+
+  // useEffect(() => {
+  //   usersQuery();
+  // });
+
   return (
     <div>
       <Head>
@@ -11,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Sidebar />
+      <Sidebar/>
     </div>
   )
 }
