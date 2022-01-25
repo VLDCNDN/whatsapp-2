@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
